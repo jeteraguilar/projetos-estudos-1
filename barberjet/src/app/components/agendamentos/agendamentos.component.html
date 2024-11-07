@@ -1,0 +1,13 @@
+<h2>Agendamentos</h2>
+<table>
+  <tr>
+    <th>Data e Hora</th>
+    <th>Cliente</th>
+    <th>Profissional</th>
+  </tr>
+  <tr *ngFor="let agendamento of agendamentos">
+    <td>{{ agendamento.dataHora }}</td>
+    <td>{{ agendamento.cliente.nome }}</td>
+    <td>{{ agendamento.profissional.nome }}</td>
+  </tr>
+</table>
